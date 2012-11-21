@@ -9,9 +9,10 @@ homebrew will tell you to tap some repos before you can install
 Add extension to mamp php.ini
 -----------------------------
 
-	vim /Applications/MAMP\ PRO/MAMP\ PRO.app/Contents/Resources/<php version ini>
+	vim /Applications/MAMP\ PRO/MAMP\ PRO.app/Contents/Resources/<yourphpversion.ini>
 
 add
+
 	extension="/usr/local/Cellar/php53-imagick/3.1.0RC2/imagick.so"
 
 
