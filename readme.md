@@ -1,5 +1,40 @@
-Install Imagick
----------------
+Install Imagick MAMP 3
+-----------------------
+	brew search php53-imagick
+	brew install php53-imagick
+
+homebrew will tell you to tap some repos before you can install
+
+Add extension to mamps extension dir
+-------------------------------------
+
+	cp /usr/local/Cellar/php53-imagick/3.1.0RC2/imagick.so /Applications/MAMP/bin/php/php5.3.28/lib/php/extensions/no-debug-non-zts-20090626/
+
+add the following line to php.ini
+(File -> Edit Template -> PHP5.3.28)
+
+	extension=imagick.so
+
+
+Restart MAMP and check phpinfo
+------------------------------
+You should see the following:
+
+	imagick module	enabled
+	imagick module version	3.1.0RC2
+	imagick classes	Imagick, ImagickDraw, ImagickPixel, ImagickPixelIterator
+	ImageMagick version	ImageMagick 6.7.7-6 2012-09-18 Q16 http://www.imagemagick.org
+	ImageMagick copyright	Copyright (C) 1999-2012 ImageMagick Studio LLC
+	ImageMagick release date	2012-09-18
+	ImageMagick number of supported formats:	191
+
+Note
+-----
+If you get an error while installing libxml2, verify that you have installed the latest version of Xcode command line tools (Xcode/Preferences/Downloads/Components)
+
+
+Install Imagick MAMP 2
+-----------------------
 	brew search php53-imagick
 	brew install php53-imagick
 
